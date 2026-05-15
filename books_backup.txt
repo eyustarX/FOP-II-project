@@ -1,0 +1,11 @@
+1|Engineering Mechanics: Statics and Dynamics|R.C. Hibbeler|978-0-13-391542-6|Mechanical Engineering|Pearson|2016|15|14|1
+2|Fundamentals of Electric Circuits|Charles K. Alexander|978-0-07-802822-9|Electrical Engineering|McGraw-Hill|2016|12|12|0
+3|Structural Analysis|R.C. Hibbeler|978-0-13-461067-2|Civil Engineering|Pearson|2017|12|12|0
+4|Materials Science and Engineering: An Introduction|William D. Callister Jr.|978-1-119-40549-8|Materials Engineering|Wiley|2018|15|15|0
+5|Advanced Engineering Mathematics|Erwin Kreyszig|978-0-470-45836-5|Mathematics|Wiley|2011|20|20|0
+6|Transport Processes and Separation Processes|Christie J. Geankoplis|978-0-13-101367-4|Chemical Engineering|Prentice Hall|2003|10|10|0
+7|Thermodynamics: An Engineering Approach|Yunus A. Cengel|978-0-07-339817-4|Mechanical Engineering|McGraw-Hill|2014|15|15|0
+8|Software Engineering: A Practitioner's Approach|Roger S. Pressman|978-0-07-802212-8|Software Engineering|McGraw-Hill|2014|15|14|1
+9|Clean Code: A Handbook of Agile Software Craftsmanship|Robert C. Martin|978-0-13-235088-4|Software Engineering|Prentice Hall|2008|15|15|0
+10|Design Patterns: Elements of Reusable Object-Oriented Software|Erich Gamma|978-0-20-163361-0|Software Design|Addison-Wesley|1994|12|12|0
+11|Software Project Management|Bob Hughes|978-0-07-712279-9|Project Management|McGraw-Hill|2012|12|12|0

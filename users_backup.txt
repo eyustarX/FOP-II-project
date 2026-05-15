@@ -1,0 +1,6 @@
+1|System Admin|admin@library.com|admin123|admin|0911000000|2026-05-15 13:36:31
+2|Ermiyas Alemayehu|ermiyas.alemayehu@library.com|librarian123|librarian|0911222333|2026-05-15 13:36:31
+3|Eyob Arega|eyob.arega@library.com|librarian123|librarian|0911444555|2026-05-15 13:36:31
+4|Eyob Tamiru|eyob.tamiru@email.com|member123|member|0911666777|2026-05-15 13:36:31
+5|Ermiyas Getachew|ermiyas.getachew@email.com|member123|member|0911888999|2026-05-15 13:36:31
+6|Eyerusalem Hailu|eyerusalem.hailu@email.com|member123|member|0911000111|2026-05-15 13:36:31
