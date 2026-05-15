@@ -118,16 +118,16 @@ The project demonstrates real-world concepts including database connectivity, ro
 ---
 library-management-system/
 │
-├── 📄 library_management.cpp    # Main application (3000+ lines)
+├── 📄 library_management.cpp    # Main application source
 ├── 📄 library_db.sql            # Database schema + sample data
 │
-├── 📁 backups/                  # Generated backup files
-│   ├── users_backup.txt
-│   ├── books_backup.txt
-│   ├── borrows_backup.txt
-│   └── logs_backup.txt
+├── 📁 backups/                  # Auto-generated on backup run
+│   ├── 📄 users_backup.txt      # All user records
+│   ├── 📄 books_backup.txt      # Full book catalog
+│   ├── 📄 borrows_backup.txt    # Borrow history
+│   └── 📄 logs_backup.txt       # Activity audit trail
 │
-└── 📄 README.md                 # Documentation
+└── 📄 README.md                 # Project documentation
 ---
 
 ## ✦ Contributors
