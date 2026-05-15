@@ -66,13 +66,68 @@ The project demonstrates real-world concepts including database connectivity, ro
 
 ## ⊟ Database Schema
 
-users         (id, full_name, email, password, role, phone, member_code, created_at)
-books         (id, title, author, isbn, category, publisher, published_year,
-               total_copies, available_copies, borrowed_copies)
-borrow_records(id, member_id, book_id, issued_by, borrow_date, due_date,
-               return_date, status, renew_count)
-activity_logs (id, user_id, action, target_table, target_id, created_at)
+### `users`
+| Column | Type | Description |
+|--------|------|-------------|
+| `id` | INT (PK) | Auto-increment primary key |
+| `full_name` | VARCHAR | Member or staff full name |
+| `email` | VARCHAR | Unique login email |
+| `password` | VARCHAR | Account password |
+| `role` | ENUM | `admin` · `librarian` · `member` |
+| `phone` | VARCHAR | Contact phone number |
+| `member_code` | VARCHAR | Auto-generated code e.g. `MBR-0001` |
+| `created_at` | TIMESTAMP | Account creation date |
 
+### `books`
+| Column | Type | Description |
+|--------|------|-------------|
+| `id` | INT (PK) | Auto-increment primary key |
+| `title` | VARCHAR | Book title |
+| `author` | VARCHAR | Author name |
+| `isbn` | VARCHAR | Unique ISBN identifier |
+| `category` | VARCHAR | Genre or subject category |
+| `publisher` | VARCHAR | Publishing house |
+| `published_year` | YEAR | Year of publication |
+| `total_copies` | INT | Total copies owned |
+| `available_copies` | INT | Copies currently on shelf |
+| `borrowed_copies` | INT | Copies currently issued out |
+
+### `borrow_records`
+| Column | Type | Description |
+|--------|------|-------------|
+| `id` | INT (PK) | Auto-increment primary key |
+| `member_id` | INT (FK) | References `users.id` |
+| `book_id` | INT (FK) | References `books.id` |
+| `issued_by` | INT (FK) | Staff `users.id` who issued the book |
+| `borrow_date` | DATE | Date the book was borrowed |
+| `due_date` | DATE | Expected return date (borrow + 14 days) |
+| `return_date` | DATE | Actual return date |
+| `status` | ENUM | `borrowed` · `returned` |
+| `renew_count` | INT | Number of times renewed |
+
+### `activity_logs`
+| Column | Type | Description |
+|--------|------|-------------|
+| `id` | INT (PK) | Auto-increment primary key |
+| `user_id` | INT (FK) | References `users.id` |
+| `action` | VARCHAR | e.g. `LOGIN` · `ADD_BOOK` · `RETURN_BOOK` |
+| `target_table` | VARCHAR | Table the action affected |
+| `target_id` | INT | Row ID that was affected |
+| `created_at` | TIMESTAMP | When the action occurred |
+
+---
+library-management-system/
+│
+├── 📄 library_management.cpp    # Main application (3000+ lines)
+├── 📄 library_db.sql            # Database schema + sample data
+│
+├── 📁 backups/                  # Generated backup files
+│   ├── users_backup.txt
+│   ├── books_backup.txt
+│   ├── borrows_backup.txt
+│   └── logs_backup.txt
+│
+└── 📄 README.md                 # Documentation
 ---
 
 ## ⊡ Project Structure
