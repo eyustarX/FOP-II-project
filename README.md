@@ -116,18 +116,17 @@ The project demonstrates real-world concepts including database connectivity, ro
 | `created_at` | TIMESTAMP | When the action occurred |
 
 ---
-  library-management-system/
-  │
-  ├── library_management.cpp    # Main application source
-  ├── library_db.sql            # Database schema + sample data
-  │
-  ├── backups/                  # Auto-generated on backup run
-  │   ├── users_backup.txt      # All user records
-  │   ├── books_backup.txt      # Full book catalog
-  │   ├── borrows_backup.txt    # Borrow history
-  │   └── logs_backup.txt       # Activity audit trail
-  │
-  └── README.md                 # Project documentation
+  ## library-management-system/
+    │
+    ├── library_management.cpp    # Main application source
+    ├── library_db.sql            # Database schema + sample data
+    │
+    │   ├── users_backup.txt      # All user records
+    │   ├── books_backup.txt      # Full book catalog
+    │   ├── borrows_backup.txt    # Borrow history
+    │   └── logs_backup.txt       # Activity audit trail
+    │
+    └── README.md                 # Project documentation
 ---
 
 ## ✦ Contributors
