@@ -130,21 +130,6 @@ library-management-system/
 └── 📄 README.md                 # Documentation
 ---
 
-## ⊡ Project Structure
-library-management-system/
-│
-├── 📄 library_management.cpp    # Main application source
-├── 📄 library_db.sql            # Database schema + seed data
-│
-├── 📁 backups/                  # Generated on backup run
-│   ├── users_backup.txt
-│   ├── books_backup.txt
-│   ├── borrows_backup.txt
-│   └── logs_backup.txt
-│
-└── 📄 README.md                 # Documentation
----
-
 ## ✦ Contributors
 
 | Avatar | Name | Role |
