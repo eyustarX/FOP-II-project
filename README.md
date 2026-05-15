@@ -56,29 +56,3 @@ The **Library Management System** is a comprehensive console-based application t
 | **Borrowing History** | Track currently borrowed books with due dates |
 
 ---
-
-## 🏗️ Technical Architecture
-
-### System Components
-
-┌─────────────────────────────────────────────────────────────┐
-│ LIBRARY MANAGEMENT SYSTEM │
-├─────────────────────────────────────────────────────────────┤
-│ ┌─────────────┐ ┌─────────────┐ ┌─────────────┐ │
-│ │ Admin │ │ Librarian │ │ Member │ │
-│ │ Dashboard │ │ Dashboard │ │ Dashboard │ │
-│ └──────┬──────┘ └──────┬──────┘ └──────┬──────┘ │
-│ │ │ │ │
-│ └────────────────┼────────────────┘ │
-│ ▼ │
-│ ┌──────────────────────────────────────────────────────┐ │
-│ │ C++ Core Business Logic │ │
-│ │ • Authentication • Validation • Backup System │ │
-│ └──────────────────────┬───────────────────────────────┘ │
-│ │ │
-│ ▼ │
-│ ┌──────────────────────────────────────────────────────┐ │
-│ │ MySQL Database Layer │ │
-│ │ • Users • Books • Borrow_records • Activity_logs │ │
-│ └──────────────────────────────────────────────────────┘ │
-└─────────────────────────────────────────────────────────────┘
