@@ -103,7 +103,6 @@ The project demonstrates real-world concepts including database connectivity, ro
 | `due_date` | DATE | Expected return date (borrow + 14 days) |
 | `return_date` | DATE | Actual return date |
 | `status` | ENUM | `borrowed` · `returned` |
-| `renew_count` | INT | Number of times renewed |
 
 ### `activity_logs`
 | Column | Type | Description |
