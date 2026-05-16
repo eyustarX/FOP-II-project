@@ -42,7 +42,6 @@ CREATE TABLE borrow_records(
     due_date DATE NOT NULL,
     return_date DATE,
     status ENUM('borrowed', 'returned') NOT NULL DEFAULT 'borrowed',
-    renew_count INT NOT NULL DEFAULT 0,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (member_id) REFERENCES users(id) ON DELETE CASCADE,
     FOREIGN KEY (book_id) REFERENCES books(id) ON DELETE CASCADE,
